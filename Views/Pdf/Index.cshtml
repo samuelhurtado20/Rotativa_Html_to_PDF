@@ -1,0 +1,31 @@
+﻿@model Rotativa_Html_to_PDF.Models.Movies
+@{
+    Layout = null;
+}
+
+<h3>
+    Make PDF file from HTML with Rotativa
+</h3>
+
+<p>
+    <strong>List Action Movies</strong>
+</p>
+
+<ul>
+    @foreach (var item in Model.Action)
+       {
+           <li>@item.Name</li>
+       }
+</ul>
+
+@*
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+</body>
+</html>*@
