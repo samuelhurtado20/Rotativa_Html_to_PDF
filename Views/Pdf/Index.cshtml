@@ -3,29 +3,32 @@
     Layout = null;
 }
 
-<h3>
+<h1>
     Make PDF file from HTML with Rotativa
-</h3>
+</h1>
 
 <p>
-    <strong>List Action Movies</strong>
+    <h2>List Action Movies</h2>
 </p>
 
-<ul>
-    @foreach (var item in Model.Action)
-       {
-           <li>@item.Name</li>
-       }
-</ul>
+@foreach (var item in Model.Action)
+{
+    <div>
+        <h3>@item.Name</h3>
+        <span>@item.Type</span>
+        <span>@item.Year</span>
+    </div>
+}
 
-@*
-<!DOCTYPE html>
+<p>
+    <h2>List Thriller Movies</h2>
+</p>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-</body>
-</html>*@
+@foreach (var item in Model.Thriller)
+{
+    <div>
+        <h3>@item.Name</h3>
+        <span>@item.Type</span>
+        <span>@item.Year</span>
+    </div>
+}
