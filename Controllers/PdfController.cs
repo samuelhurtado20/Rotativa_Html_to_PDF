@@ -33,17 +33,5 @@ namespace Rotativa_Html_to_PDF.Controllers
                 //FileName = "Rotativa_Document.pdf"
             };
         }
-
-        public IActionResult Ofertas()
-        {
-            //return View();
-            return new ViewAsPdf("Ofertas")
-            {
-                PageSize = Rotativa.AspNetCore.Options.Size.Letter,
-                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Landscape,
-                //FileName = "Rotativa_Document.pdf",
-                PageMargins = new Rotativa.AspNetCore.Options.Margins(25, 25, 25, 25)
-            };
-        }
     }
 }
